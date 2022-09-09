@@ -1,0 +1,76 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.config-status-bar {
+  color: @text-color;
+  background-color: @tool-panel-background-color;
+}
+
+.status-bar-tooltip {
+  .tooltip-inner.tooltip-inner {
+    padding: @component-padding / 2;
+    background-color: @tool-panel-background-color;
+    border: 1px solid @base-border-color;
+    box-shadow: 0 4px 8px hsla(0, 0, 0, .1);
+    color: @text-color;
+  }
+  &.top .tooltip-arrow.tooltip-arrow {
+    width: @component-padding;
+    height: @component-padding;
+    border-width: 0 0 1px 1px;
+    border-color: @base-border-color;
+    background-color: @tool-panel-background-color;
+    border-bottom-right-radius: 2px;
+    transform: rotate(-45deg);
+  }
+}
+
+.config-pane {
+  display: table-row-group;
+  padding: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: @tool-panel-background-color;
+}
+
+.config-tile {
+  background-color: lighten(@base-background-color,5%);
+  padding: 10px 10px;
+  height: 20%;
+  border:1px solid darken(@base-background-color,5%);
+  border-radius: 3px;
+}
+
+.config-tile div {
+  text-align: left;
+}
+
+.config-tile label {
+  margin: auto 5px;
+  font-size: @font-size;
+  white-space: nowrap;
+}
+
+.config-tile input {
+  vertical-align: -2px;
+  margin: 0;
+  padding: 0;
+}
+
+.config-tile span {
+  float: right;
+}
+
+.config-tile span.up {
+  margin-left: 8px;
+  margin-right: 3px;
+}
+
+.config-tile span.lighten {
+  opacity: .3;
+}

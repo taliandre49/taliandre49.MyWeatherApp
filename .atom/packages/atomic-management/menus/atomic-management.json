@@ -1,0 +1,28 @@
+{
+  "context-menu": {
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Atomic Management",
+          "submenu": [
+            {
+              "label": "Show Window Config",
+              "command": "atomic-management:open-window-config"
+            },
+            {
+              "label": "Reset Remembered Window Config",
+              "command": "atomic-management:reset-remembered-window-config"
+            },
+            {
+              "label": "Toggle Require Configured Packages",
+              "command": "atomic-management:toggle-require-configured-packages"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

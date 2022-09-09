@@ -1,0 +1,15 @@
+"*":
+  core:
+    telemetryConsent: "no"
+  editor:
+    fontSize: 12
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "27a8a484-42fe-4b92-939e-7fda3e3c489b"
+  "markdown-preview-enhanced":
+    liveUpdate: false
+  welcome:
+    showOnStartup: false
