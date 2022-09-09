@@ -1,0 +1,21 @@
+opam-version: "2.0"
+added: [
+  "doc/chrome-trace" {"D"}
+  "doc/chrome-trace/CHANGES.md" {"F:S125029T1661357597."}
+  "doc/chrome-trace/LICENSE.md" {"F:S1111T1661357597."}
+  "doc/chrome-trace/README.md" {"F:S5362T1661357597."}
+  "lib/chrome-trace" {"D"}
+  "lib/chrome-trace/META" {"F:S251T1661357597."}
+  "lib/chrome-trace/chrome_trace.a" {"F:S31112T1661357597."}
+  "lib/chrome-trace/chrome_trace.cma" {"F:S61589T1661357597."}
+  "lib/chrome-trace/chrome_trace.cmi" {"F:S4477T1661357597."}
+  "lib/chrome-trace/chrome_trace.cmt" {"F:S111331T1661357597."}
+  "lib/chrome-trace/chrome_trace.cmti" {"F:S21661T1661357597."}
+  "lib/chrome-trace/chrome_trace.cmx" {"F:S3616T1661357597."}
+  "lib/chrome-trace/chrome_trace.cmxa" {"F:S482T1661357597."}
+  "lib/chrome-trace/chrome_trace.cmxs" {"F:S63408T1661357597."}
+  "lib/chrome-trace/chrome_trace.ml" {"F:S9730T1661357597."}
+  "lib/chrome-trace/chrome_trace.mli" {"F:S2281T1661357597."}
+  "lib/chrome-trace/dune-package" {"F:S862T1661357597."}
+  "lib/chrome-trace/opam" {"F:S845T1661357597."}
+]

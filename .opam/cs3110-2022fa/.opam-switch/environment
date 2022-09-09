@@ -1,0 +1,6 @@
+OPAM_SWITCH_PREFIX	=	/Users/nelson.jordan/.opam/cs3110-2022fa	Prefix\ of\ the\ current\ opam\ switch
+CAML_LD_LIBRARY_PATH	=	/Users/nelson.jordan/.opam/cs3110-2022fa/lib/stublibs	Updated\ by\ package\ ocaml-base-compiler
+CAML_LD_LIBRARY_PATH	=	/Users/nelson.jordan/.opam/cs3110-2022fa/lib/ocaml/stublibs:/Users/nelson.jordan/.opam/cs3110-2022fa/lib/ocaml	Updated\ by\ package\ ocaml
+CAML_LD_LIBRARY_PATH	+=	/Users/nelson.jordan/.opam/cs3110-2022fa/lib/stublibs	Updated\ by\ package\ ocaml
+OCAML_TOPLEVEL_PATH	=	/Users/nelson.jordan/.opam/cs3110-2022fa/lib/toplevel	Updated\ by\ package\ ocaml
+PATH	=+=	/Users/nelson.jordan/.opam/cs3110-2022fa/bin	Binary\ dir\ for\ opam\ switch\ cs3110-2022fa

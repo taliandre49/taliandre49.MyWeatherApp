@@ -1,0 +1,37 @@
+opam-version: "2.0"
+added: [
+  "doc/qcheck-core" {"D"}
+  "doc/qcheck-core/CHANGELOG.md" {"F:S10062T1661357664."}
+  "doc/qcheck-core/LICENSE" {"F:S1337T1661357664."}
+  "doc/qcheck-core/README.adoc" {"F:S11795T1661357664."}
+  "lib/qcheck-core" {"D"}
+  "lib/qcheck-core/META" {"F:S466T1661357664."}
+  "lib/qcheck-core/QCheck.ml" {"F:S55878T1661357664."}
+  "lib/qcheck-core/QCheck.mli" {"F:S53964T1661357664."}
+  "lib/qcheck-core/QCheck2.ml" {"F:S69975T1661357664."}
+  "lib/qcheck-core/QCheck2.mli" {"F:S64977T1661357664."}
+  "lib/qcheck-core/dune-package" {"F:S1606T1661357664."}
+  "lib/qcheck-core/opam" {"F:S745T1661357664."}
+  "lib/qcheck-core/qCheck.cmi" {"F:S62094T1661357664."}
+  "lib/qcheck-core/qCheck.cmt" {"F:S1187889T1661357664."}
+  "lib/qcheck-core/qCheck.cmti" {"F:S365757T1661357664."}
+  "lib/qcheck-core/qCheck.cmx" {"F:S34573T1661357664."}
+  "lib/qcheck-core/qCheck2.cmi" {"F:S46401T1661357664."}
+  "lib/qcheck-core/qCheck2.cmt" {"F:S1163844T1661357664."}
+  "lib/qcheck-core/qCheck2.cmti" {"F:S324959T1661357664."}
+  "lib/qcheck-core/qCheck2.cmx" {"F:S41736T1661357664."}
+  "lib/qcheck-core/qcheck_core.a" {"F:S582032T1661357664."}
+  "lib/qcheck-core/qcheck_core.cma" {"F:S994838T1661357664."}
+  "lib/qcheck-core/qcheck_core.cmxa" {"F:S3459T1661357664."}
+  "lib/qcheck-core/qcheck_core.cmxs" {"F:S597512T1661357664."}
+  "lib/qcheck-core/runner/QCheck_base_runner.ml" {"F:S16427T1661357664."}
+  "lib/qcheck-core/runner/QCheck_base_runner.mli" {"F:S6943T1661357664."}
+  "lib/qcheck-core/runner/qCheck_base_runner.cmi" {"F:S6139T1661357664."}
+  "lib/qcheck-core/runner/qCheck_base_runner.cmt" {"F:S235797T1661357664."}
+  "lib/qcheck-core/runner/qCheck_base_runner.cmti" {"F:S35747T1661357664."}
+  "lib/qcheck-core/runner/qCheck_base_runner.cmx" {"F:S6652T1661357664."}
+  "lib/qcheck-core/runner/qcheck_runner.a" {"F:S75344T1661357664."}
+  "lib/qcheck-core/runner/qcheck_runner.cma" {"F:S113793T1661357664."}
+  "lib/qcheck-core/runner/qcheck_runner.cmxa" {"F:S1206T1661357664."}
+  "lib/qcheck-core/runner/qcheck_runner.cmxs" {"F:S119720T1661357664."}
+]

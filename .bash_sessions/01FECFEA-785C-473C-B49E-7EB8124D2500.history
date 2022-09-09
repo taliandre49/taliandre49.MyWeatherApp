@@ -1,0 +1,510 @@
+python cardstuff.py
+type(output)
+python cardstuff.py
+exit()
+cd DEsktop
+cd lab11
+python cardstuff_test.py
+exit() gg
+python cardstuff_test.py
+exit(0
+exit() python cardstuff_test.py
+python cardstuff_test.py
+python cardstuff_test.py
+python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+def draw(deck):
+    """Returns: a single Card that is randomly drawn (and removed) from deck.
+
+    Precondition: deck is a list of Cards containing at least one Card."""
+    i=random.randrange(len(deck))
+    z=deck.pop(i)
+    return z
+cd DEsktop
+cd lab11
+python cardstuff_test.py
+exit()  python cardstuff_test.py
+ python cardstuff_test.py
+exit()  python cardstuff_test.py
+ python cardstuff_test.py
+exit()  python cardstuff_test.py
+ python cardstuff_test.py
+exit()  python cardstuff_test.py
+ python cardstuff_test.py
+python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() \python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit(0
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() orig_len-5
+exit() orig_len-5
+exit(0
+python cardstuff_test.py
+exit(0
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+python cardstuff_test.py
+exit(0
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit
+cs dektop
+cd Desktop
+cd lab11
+python cardstuff_test.py
+edxit() exit()
+python cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.pypython cardstuff_test.py
+python cardstuff_test.py
+exit() python cardstuff_test.py
+python cardstuff_test.py
+exit()
+curl -L https://raw.githubusercontent.com/drud/ddev/master/scripts/install_ddev.sh | bash
+brew install drud/ddev/ddev
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+exit()
+cd Desktop
+cd lab12
+python clamp_test.py
+exit() d
+python clamp_test.py
+cd Desktop
+cd lab12
+python clamp_test.py
+exit() f
+python clamp_test.py
+exit() python clamp_test.py
+python clamp_test.py
+exit() python clamp_test.py
+python clamp_test.py
+exit() python clamp_test.py
+python clamp_test.py
+exit() python clamp_test.py
+python clamp_test.py
+python clamp_test.py
+python clamp_test.py
+exit() python
+pyhton
+exit() exit()
+python
+exit() pyhton
+python
+exit() python clamp_test.py
+python clamp_test.py
+type(x)
+cd clamp.py
+ls
+clamp_test.py
+clamp.py
+cd clamp.py
+cd clamp.py
+cd clamp_test.py
+python
+from lab12 import clamp.py
+pyhton clamp.py
+python clamp.py
+type(x)
+clamp([1,2,3],4,0)
+exit()
+cd Desktop
+cd lab12
+python clamp_test.py
+exit() d
+python clamp_test.py 
+exit() clamp_test.py 
+pyhton clamp_test.py 
+pyhton clamp_test.py 
+python clamp_test.py 
+exit() n
+python clamp_test.py 
+exit() atlast=[0,1,3,4]
+python
+pyhton clamp_test.py
+python clamp_test.py
+for i in range(0,len(alist)):
+        alist[i]=int(alist[i])
+        x= alist[i dd d python clamp_test.py exit() ddsnj
+cd desktop
+cd lab12
+python clamp_test.py
+exit() d
+python clamp_test.py
+python clamp_test.py
+exit() python clamp_test.py
+python clamp_test.py
+exit() ddf
+python clamp_test.py
+exit() python clamp_test.py
+python clamp_test.py
+exit() int(alist[i])
+python clamp_test.py
+exit()
+cd Desktop
+cd lab12
+python clamp_test.py
+exit() k
+python clamp_test.py
+exit() d
+python clamp_test.py
+exit() d
+python clamp_test.py
+exit() dd
+https://cornell.zoom.us/j/99734453531?pwd=VGJoRWxSbnA2NmtGM0crVWp0bGpvdz0
+dsa
+python clamp_test.py
+pyhton
+pyhton
+python
+pyhton
+pyhton
+pyhton
+python
+pyhton
+pyhton
+pyhton
+python
+pyhton
+python
+pyhton
+python
+python
+cd desktop
+cd lab13
+python recursion_qs_test.py
+exit()
+cd desktop
+cd lab13
+python recursion_qs_test.py
+exit() p
+pyhton recursion_qs_test.p
+python recursion_qs_test.py
+exit() f
+python recursion_qs_test.py
+exit() d
+python recursion_qs_test.py
+exit() d
+python recursion_qs_test.py
+exit() d
+recursion_qs_test.py
+pyhton recursion_qs_test.py
+python recursion_qs_test.py
+exit() rf
+python recursion_qs_test.py
+exit() d
+pyhton recursion_qs_test.py
+pyhton recursion_qs_test.py
+python recursion_qs_test.py
+pyhton recursion_qs_test.py
+python recursion_qs_test.py
+exit() p
+python recursion_qs_test.py
+exit() hh
+python recursion_qs_test.py
+exit() s
+numberdolls=1
+    if doll.hasSeam == True:;         return 1 + num_dolls(doll.innerDoll)
+    else:
+p
+python recursion_qs_test.py
+exit()
+cd desktop
+cd lab15
+cd lab 15
+cd lab15
+python blackjack_checks.py
+exit()
+cd Desktop
+cd lab15
+python Running test_init()
+testing start deck of Queen of Clubs, 10 of Diamonds, 9 of Hearts, Ace of Clubs
+Traceback (most recent call last):
+  File "blackjack_checks.py", line 296, in <module>
+    fn(verbose)
+  File "blackjack_checks.py", line 93, in test_init
+    game = blackjack.Blackjack(start_deck)
+TypeError: __init__() takes 1 positional argument but 2 were given
+python blackjack_checks.py
+exit() e
+python blackjack_checks.py
+cd desktop
+cd lab13
+python recursion_optional.py
+j
+exit() d
+python recursion_optional.py
+exit() dn
+python recursion_optional.py
+[['this'],['is,['a', ['very','very'],['nes ted', 'list']]]]
+
+print_nested_list
+exit()
+
+cd desktop
+cd lab13
+python recursion_optional.py
+[['dd',['dd'],]
+exit() kj
+python https://cornell.zoom.us/j/94628154094?pwd=SzYrbjdsUVB5ZEtKNTBWMGthcXNZQT
+exit() k
+python recursion_qs_test.py
+exit() d
+python recursion_optional.py
+exit() j
+python recursion_qs_test.py
+exit() d
+pyhton recursion_qs_test.py
+python recursion_qs_test.py
+exit() e
+python recursion_qs_test.py
+exit() j
+python recursion_qs_test.py
+exit() d
+python recursion_qs_test.py
+exit() d
+python recursion_qs_test.py
+exit() h
+python recursion_qs_test.py
+exit() hh
+python recursion_qs_test.py
+exit() b
+python recursion_qs_test.py
+exit() h
+python recursion_qs_test.py
+exit()
+python
+python
+cd desktop
+cd A5
+python showdown_time_a5.py
+exit() ff
+pythonshowdown_time_a5.py
+python showdown_time_a5.py
+exit() exitI()
+exit() dh
+cd Desktop
+cd desktop
+pyhton
+python
+which java
+/usr/bin/java -version
+tail -f /var/log/system.log
+tail -f /library/logs
+exit
+java-version
+java -version
+C:\>java -version
+java -version
+javac-version
+javac -version
+which java
+java -version
+java --version
+/usr/bin/java -version
+. ./.
+./.
+. ./.profile
+java -version
+java -version
+exit
+ls -al
+cd Desktop/
+ls -ak
+ls -al
+cd ..
+clear
+pwd
+touch scores2.txt
+ls -al
+git config --global user.name "YOUR NAME"
+exit() git config --global user.name "Natalia Jordan"
+"git --version"
+"git --version"
+cd.downloads
+cd.Downloads
+ls
+Desktop.ls
+ls.Desktop
+cd Downloads
+ls
+ls
+Downloads ls
+cd Desktop
+cd Desktop
+cd Documents
+exit() ls
+ls
+cd Desktop
+ls
+cd Applications
+ls
+ls
+cd Desktop
+cd Downloads
+ls
+git --version
+git --version
+git config --global user.name "Natalia Jordan"
+git config --global user.email "naj46@cornell.edu"
+ssh-keygen -t rsa -b 4096 -C "naj46@cornell.edu"
+pbcopy < ~/.ssh/id_rsa.pub
+ssh -T git@github.coecis.cornell.edu
+ssh -T git@github.coecis.cornell.edu
+ssh -T git@github.coecis.cornell.edu
+git config --global user.name "Natalia Jordan"
+git config --global user.email "naj46@cornell.edu"
+ssh-keygen -t rsa -b 4096 -C "naj46@cornell.edu"
+pbcopy < ~/.ssh/id_rsa.pub
+ssh -T git@github.coecis.cornell.edu
+ls
+cd github
+ls
+To do list
+q
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+Sof04nat!
+exit
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/usr/local/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install opam
+opam init --bare -a -y
+opam switch create cs3110-2022fa ocaml-base-compiler.4.14.0
+opam switch list
+opam install -y utop odoc ounit2 qcheck bisect_ppx menhir ocaml-lsp-server ocamlformat ocamlformat-rpc
+utop
+shell command
+code .
+ls
+cd ..
+ls
+cd 3110
+ls
+code .
+quit
+exit
+cd 3110
+cd 3110
+cd nelson.jordan
+ls
+ls
+cd nelson.jordan
+ls
+cd 3110
+cd nelson.jordan@njordan-mac
+cd desktop
+ls
+zsh
+zsh
+bash
+ssh -T git@github.coecis.cornell.edu
+utop
+utop
+utop
+$ mkdir hello-world
+$ cd hello-world
+ mkdir Ocaml-practice
+mkdir Ocaml-practice
+cd Ocaml-practice
+$ ocamlc -o hello.byte hello.ml
+$ ocamlc -o hello.byte hello.ml
+$ ocamlc -o hello.byte hello.ml
+ocamlc -o hello.byte hello.ml
+./hello.byte
+cd hello.ml
+ls
+ls
+cd hello.ml
+ocamlc -o hello.byte hello.ml
+mkdir Ocaml-practice
+cd Ocaml-practice
+ocamlc -o hello.byte hello.ml
+dune build hello.exe
+$ _build/default/hello.exe
+Hello world!
+ _build/default/hello.exe
+exit;
+utop
+utop
+cd Ocaml-practice/
+ls..
+ls
+$ ocamlc -o hello.byte hello.ml
+ocamlc -o hello.byte hello.ml
+..
+mkdir nate
+cd nate
+..

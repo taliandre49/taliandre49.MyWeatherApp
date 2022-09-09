@@ -1,0 +1,32 @@
+opam-version: "2.0"
+added: [
+  "doc/ocamlformat-rpc-lib" {"D"}
+  "doc/ocamlformat-rpc-lib/CHANGES.md" {"F:S79421T1661357607."}
+  "doc/ocamlformat-rpc-lib/LICENSE.md" {"F:S1080T1661357607."}
+  "doc/ocamlformat-rpc-lib/README.md" {"F:S1844T1661357607."}
+  "lib/ocamlformat-rpc-lib" {"D"}
+  "lib/ocamlformat-rpc-lib/IO.ml" {"F:S1896T1661357607."}
+  "lib/ocamlformat-rpc-lib/META" {"F:S226T1661357607."}
+  "lib/ocamlformat-rpc-lib/dune-package" {"F:S1471T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib.a" {"F:S37808T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib.cma" {"F:S64555T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib.cmi" {"F:S7507T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib.cmt" {"F:S114832T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib.cmti" {"F:S39204T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib.cmx" {"F:S3164T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib.cmxa" {"F:S1052T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib.cmxs" {"F:S63424T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib.ml" {"F:S10076T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib.mli" {"F:S5521T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib__.cmi" {"F:S264T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib__.cmt" {"F:S2689T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib__.cmx" {"F:S139T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib__.ml" {"F:S77T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib__IO.cmi"
+    {"F:S1193T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib__IO.cmt"
+    {"F:S9568T1661357607."}
+  "lib/ocamlformat-rpc-lib/ocamlformat_rpc_lib__IO.cmx"
+    {"F:S390T1661357607."}
+  "lib/ocamlformat-rpc-lib/opam" {"F:S858T1661357607."}
+]
