@@ -1,0 +1,39 @@
+.flexcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-bottom {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-top {
+  color: white;
+  justify-content: center;
+  margin-bottom: .5em;
+  ;
+}
+
+.larger {
+  max-width: 10em;
+  min-height: 1.5em;
+  margin: 0 auto;
+}
+
+#requet-submit {
+  max-width: 50%;
+  min-height: 2em;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 1em;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+  background-color: rgba(23, 154, 23, 0.816);
+  border-radius: .3em;
+}
