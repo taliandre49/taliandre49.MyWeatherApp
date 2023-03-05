@@ -24,12 +24,12 @@
   font-size: calc(10px + 2vmin);
   color: white;
 } */
-
+/* 
 body,
 html {
   margin-top: 0;
   padding: 0;
-}
+} */
 
 header {
   display: flex;
@@ -105,7 +105,7 @@ h3 {
   }
 } */
 
-/* media queire to change size of get forcast based on size of screen */
+/* media queire to change size of Get Weather based on size of screen */
 
 @media screen and (max-width: 600px) {
   .headerbut {
