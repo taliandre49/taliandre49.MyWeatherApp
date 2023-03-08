@@ -100,6 +100,7 @@ export function LocationPlace() {
         <p>{Uppercasefirstletter(selectDay.weather[0].description)}</p>
         <p> Min Temp: {Math.round(1.8 * Math.abs(selectDay.main.temp_min - 273) + 32)}°F</p>
         <p> Max Temp: {Math.round(1.8 * Math.abs(selectDay.main.temp_max - 273) + 32)}°F</p>
+        <p> Humidity: {selectDay.main.humidity}</p>
       </div>
     );
 
@@ -133,7 +134,7 @@ export function LocationPlace() {
           </div>
         </div>
         <p></p>
-        <h1 className={((!open || !close) && { city } !== " ") ? " " : "hide"}> {Uppercasefirstletter(city)}</h1>
+        <h1 className={((!open || !close) && setCity !== " ") ? " " : " hide"}> {Uppercasefirstletter(city)}</h1>
         <div className={!card ? "gone" : " "} id="weathercards">
           {forecast.map((day) => (
             <WeatherCard key={day.dt} day={day} />
