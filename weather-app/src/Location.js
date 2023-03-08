@@ -132,6 +132,7 @@ export function LocationPlace() {
             <button value="Get Weather" type="submit" id="requet-submit" onClick={() => { handleSearch(); setOpen(!open) }} className='button'> Get Weather</button>
           </div>
         </div>
+        <p></p>
         <h1 className={((!open || !close) && setCity !== " ") ? " " : "hide "}> {Uppercasefirstletter(city)}</h1>
         <div id="weathercards">
           {forecast.map((day) => (
