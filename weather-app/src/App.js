@@ -7,7 +7,7 @@ import NoMatch from './NoMatch';
 
 // import DetailsCard from './Location';
 import { WeatherForcast } from './Fiveday';
-import { LocationPlace } from './Location';
+import LocationPlace from './Location';
 import SingleDay from './Singleday';
 
 export const App = () => {

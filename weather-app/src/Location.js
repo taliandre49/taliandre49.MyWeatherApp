@@ -3,8 +3,17 @@ import { useState } from "react";
 import axios from 'axios';
 import PropTypes from 'prop-types';
 // import { useNavigate } from 'react-router-dom';
+// const state = {
+//   isBoxVisible: false
+// };
+import React from 'react';
 
 export function LocationPlace() {
+
+  const [open, setOpen] = React.useState(true);
+
+
+
   // const navigate = useNavigate();
   const [city, setCity] = useState('');
   const [forecast, setForecast] = useState([]);
@@ -12,7 +21,9 @@ export function LocationPlace() {
   const API_KEY = '79e038ee9c973e14fcc461e602fd877d';
   // this will retrieve the forecast for the city input.
   const handleSearch = async () => {
+
     // navigate('Fiveday');
+
     const response = await axios.get(
 
       `https://api.openweathermap.org/data/2.5/forecast?q=${city}&type=accurate&APPID=${API_KEY}&n=5`
@@ -24,7 +35,9 @@ export function LocationPlace() {
     setForecast(forecastData);
     console.log(response.data)
 
+
   };
+
   const handleCardClick = (day) => {
     setSelectedDay(day);
   };
@@ -46,6 +59,7 @@ export function LocationPlace() {
         </div>
       </div>
     );
+
   };
 
   WeatherCard.propTypes = {
@@ -72,8 +86,6 @@ export function LocationPlace() {
       )
 
     }
-
-
     return (
       <div className="details-card">
         <img src={iconUrl} alt={selectDay.weather[0].description} />
@@ -84,10 +96,10 @@ export function LocationPlace() {
         <p> Max Temp: {Math.round(1.8 * Math.abs(selectDay.main.temp_max - 273) + 32)}°F</p>
       </div>
     );
+
   };
   return (
     <>
-
       <header className="App-head flexdiv" >
         <h3>
           My Weather App
@@ -95,17 +107,18 @@ export function LocationPlace() {
         <div className="headerbut align-right">
           <label htmlFor='location-input'> </label>
           <input value={city} onChange={(e) => setCity(e.target.value)} id='location-input' className='larger' placeholder='Ithaca, NY' />
-          <button value="Get Weather" type="submit" id="requet-submit" onClick={() => { handleSearch() }} className='button'> <a href="/src/Fiveday.js" /> Get Weather</button>
+          <button value="Get Weather" type="submit" id="requet-submit" onClick={() => { handleSearch() }} className='button'> Get Weather</button>
         </div>
       </header>
       <div className='location flexcontainer middle background'>
-        <div className="flex-top">
-          <label htmlFor='location-input'> Enter a City and State </label>
-        </div>
-
-        <div className="flex-bottom">
-          <input value={city} onChange={(e) => setCity(e.target.value)} id='location-input' className='larger' placeholder='Ithaca, NY' />
-          <button value="Get Weather" type="submit" id="requet-submit" onClick={() => { handleSearch() }} className='button'> <a href="/src/Fiveday.js" /> Get Weather</button>
+        <div className={open ? "open" : "hide"}>
+          <div className="flex-top">
+            <label htmlFor='location-input'> Enter a City and State </label>
+          </div>
+          <div className="flex-bottom">
+            <input value={city} onChange={(e) => setCity(e.target.value)} id='location-input' className='largermain' placeholder='Ithaca, NY' />
+            <button value="Get Weather" type="submit" id="requet-submit" onClick={() => { handleSearch(); setOpen(!open) }} className='button'> Get Weather</button>
+          </div>
         </div>
         <div className="weather-cards flexcards">
           {forecast.map((day) => (
@@ -115,8 +128,6 @@ export function LocationPlace() {
         <DetailsCard />
       </div>
     </>
-
   )
 }
-
 export default LocationPlace;

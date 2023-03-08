@@ -11,7 +11,7 @@
 }
 
 .flex-top {
-  color: black;
+  color: white;
   justify-content: center;
   margin-bottom: .5em;
   text-align: center;
@@ -26,6 +26,14 @@
   max-width: 10em;
   min-height: 1.5em;
   margin: 0 auto;
+  margin-right: .5em;
+}
+
+.largermain {
+  max-width: 10em;
+  min-height: 1.5em;
+  margin: 0 auto;
+  margin-right: 3em;
 }
 
 #requet-submit {
