@@ -11,8 +11,9 @@ import React from 'react';
 export function LocationPlace() {
 
   const [open, setOpen] = React.useState(true);
-  const [dis, setDis] = React.useState(true);
+  const [card, setCard] = React.useState(true);
   const [close, setClose] = React.useState(true);
+  // const emptycit = " ";
 
 
 
@@ -52,10 +53,10 @@ export function LocationPlace() {
     };
     const truedate = new Date(day.dt * 1000).toLocaleDateString('en-US', customDate);
     const iconUrl = `http://openweathermap.org/img/w/${day.weather[0].icon}.png`;
-
+    console.log(card)
     return (
-      <div className="flexcards">
-        <div className="weather-card paddingcards" onClick={() => { handleCardClick(day); setDis(!dis) }}>
+      <div className={!card ? "hide" : " "} id="cardsdis">
+        <div className="weather-card paddingcards" onClick={() => { handleCardClick(day); setCard(!card) }}>
           <img src={iconUrl} alt={day.weather[0].description} />
           <p>{truedate}</p>
         </div>
@@ -113,7 +114,7 @@ export function LocationPlace() {
         </div>
       </header>
       <div className='location flexcontainer middle background'>
-        <div className={(!open || !close) ? "hide" : " "}>
+        <div className={((!open || !close) && setCity !== " ") ? "hide" : " "}>
           <div className="flex-top">
             <label htmlFor='location-input'> Enter a City and State </label>
           </div>
@@ -122,7 +123,7 @@ export function LocationPlace() {
             <button value="Get Weather" type="submit" id="requet-submit" onClick={() => { handleSearch(); setOpen(!open) }} className='button'> Get Weather</button>
           </div>
         </div>
-        <div className={dis ? "dis" : "hide"} id="weathercards">
+        <div className={card ? " " : "hide"} id="weathercards">
           {forecast.map((day) => (
             <WeatherCard key={day.dt} day={day} />
           ))}
@@ -132,4 +133,4 @@ export function LocationPlace() {
     </>
   )
 }
-export default LocationPlace;
+export default LocationPlace
