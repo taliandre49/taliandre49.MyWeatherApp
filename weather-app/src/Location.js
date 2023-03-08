@@ -2,46 +2,42 @@ import './Location.css';
 import { useState } from "react";
 import axios from 'axios';
 import PropTypes from 'prop-types';
-// import { useNavigate } from 'react-router-dom';
-// const state = {
-//   isBoxVisible: false
-// };
 import React from 'react';
 
 export function LocationPlace() {
 
+
+  //consts need/used to store needed data that will be displayed
   const [open, setOpen] = React.useState(true);
   const [card, setCard] = React.useState(true);
   const [close, setClose] = React.useState(true);
   const [max, setMax] = useState('');
   const [min, setMin] = useState('');
-
-  // const emptycit = " ";
-
-
-
-  // const navigate = useNavigate();
   const [city, setCity] = useState('');
   const [forecast, setForecast] = useState([]);
   const [selectDay, setSelectedDay] = useState(null);
   const API_KEY = '79e038ee9c973e14fcc461e602fd877d';
-  // this will retrieve the forecast for the city input.
-  const handleSearch = async () => {
 
-    // navigate('Fiveday');
+
+  // component will retrieve the forecast for the city input.
+  const handleSearch = async () => {
 
     const response = await axios.get(
 
       `https://api.openweathermap.org/data/2.5/forecast?q=${city}&type=accurate&APPID=${API_KEY}&n=5`
 
     );
-    //group by day
+
+    //group by day, index by 8 to get the single day based on 3hr interval
     const arrayforcast = response.data.list
     const forecastData = arrayforcast.filter((item, index) => index % 8 === 0);
     setForecast(forecastData);
-    console.log(response.data)
-    console.log(min, max)
 
+    //used to check API data content and structure retrieved
+    // console.log(response.data)
+    // console.log(min, max)
+
+    //Function to get max and min temp of the day which stores into a hook
 
     let minTemp = Infinity;
     let maxTemp = -Infinity;
@@ -59,9 +55,8 @@ export function LocationPlace() {
       setMin(minTemp);
     });
 
-
-
-    console.log("Min Temp:", setMax, "Max Temp:", setMin);
+    // used to check temperatures:
+    // console.log("Min Temp:", setMax, "Max Temp:", setMin);
   };
 
 
@@ -104,6 +99,8 @@ export function LocationPlace() {
 
     const iconUrl = `http://openweathermap.org/img/w/${selectDay.weather[0].icon}.png`;
 
+
+    //function will change format of date to date format of  Weekday, Month.day
     const customDate = {
       weekday: 'long',
       month: 'short',
@@ -111,12 +108,14 @@ export function LocationPlace() {
     };
     const date = new Date(selectDay.dt * 1000).toLocaleDateString('en-US', customDate);
 
+    //function Uppercase(target) takes in a target which is the city and capitilizes it if needed to display capatilized city
     function Uppercasefirstletter(target) {
       return (
         target.charAt(0).toUpperCase() + target.slice(1)
       )
 
     }
+    //function keltoFar(target) takes in a int and converts its value from kelvin to farenhiet
     function KeltoFar(target) {
       return (
         Math.round(1.8 * (target - 273) + 32)
@@ -127,12 +126,9 @@ export function LocationPlace() {
       <div className="details-card">
         <img src={iconUrl} alt={selectDay.weather[0].description} className="largerimg" />
         <h4>{date}</h4>
-        {/* <p>{Uppercasefirstletter(city)}</p> */}
         <p>{Uppercasefirstletter(selectDay.weather[0].description)}</p>
         <p> Min Temp: {KeltoFar(min)} °F </p>
         <p> Max Temp: {KeltoFar(max)}°F</p>
-        {/* <p> Min Temp: {Math.round(1.8 * Math.abs(selectDay.main.temp_min - 273) + 32)}°F </p>
-        <p> Max Temp: {Math.round(1.8 * Math.abs(selectDay.main.temp_max - 273) + 32)}°F</p> */}
         <p> Humidity: {selectDay.main.humidity}</p>
       </div>
     );
