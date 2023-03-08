@@ -1,27 +1,44 @@
 
 import './App.css';
-import LocationPlace from './Location';
-// import ReactDOM from 'react-dom';
+import { Routes, Route } from 'react-router-dom';
+import NoMatch from './NoMatch';
+// import { useState } from "react";
+// // import axios from 'axios';
 
-export function App() {
+// import DetailsCard from './Location';
+import { WeatherForcast } from './Fiveday';
+import { LocationPlace } from './Location';
+import SingleDay from './Singleday';
+
+export const App = () => {
   return (
-    <div>
-      <header className="App-head">
+    <>
+      <div>
+        <Routes>
+          <Route path="/" element={<LocationPlace />} />
+          <Route path="/Fiveday" element={<WeatherForcast />} />
+          <Route path="/Singleday" element={<SingleDay />} />
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
+      </div>
+
+      {/* <header className="App-head flexdiv" >
         <h3>
           My Weather App
         </h3>
-        <div className='headerbut align-right'>
-          <label htmlFor='location-input'></label>
-          <input id='locationinput' className='smaller' placeholder='Ithaca, NY' />
-          <input value="Get Weather" type="submit" id="requet-submit" className='button' />
+        <div className='flexdiv'>
+          <LocationPlace />
         </div>
       </header>
       <div className="background">
         <div className="middle">
+          <p className="flex-top">Please Enter a City</p>
           <LocationPlace />
+
         </div>
       </div>
-    </div>
+    </> */}
+    </>
   );
 }
 

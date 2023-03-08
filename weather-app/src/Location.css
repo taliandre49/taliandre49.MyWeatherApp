@@ -11,10 +11,15 @@
 }
 
 .flex-top {
-  color: white;
+  color: black;
   justify-content: center;
   margin-bottom: .5em;
-  ;
+  text-align: center;
+}
+
+.centerblock {
+  display: block;
+
 }
 
 .larger {
@@ -36,4 +41,65 @@
 .button {
   background-color: rgba(23, 154, 23, 0.816);
   border-radius: .3em;
+  min-width: 7em;
+}
+
+.flexcards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.paddingcards {
+  padding: 2em;
+}
+
+.center {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.background {
+  background-image: url('/images/pattern.svg');
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+.headerbut {
+  justify-content: flex-end;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: .7em;
+  margin-left: 3em;
+}
+
+.align-right {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: end;
+
+}
+
+@media screen and (max-width: 600px) {
+  .headerbut {
+    justify-content: flex-end;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: .2em;
+  }
+
+  .buttons {
+    font-size: 10px;
+    background-color: rgba(23, 154, 23, 0.816);
+    border-radius: .3em;
+  }
+
+}
+
+.hide {
+  display: none;
 }

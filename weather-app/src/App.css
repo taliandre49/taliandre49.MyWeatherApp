@@ -51,12 +51,24 @@ header {
   margin-left: 3em;
 }
 
+.flexdiv {
+  display: flex;
+  flex-direction: row;
+}
+
 .align-right {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
   align-items: end;
 
+}
+
+.flex-top {
+  color: white;
+  justify-content: center;
+  margin-bottom: .5em;
+  font-size: 24px;
 }
 
 
@@ -66,19 +78,26 @@ header {
 
 .App-head {
   background-color: rgba(255, 81, 0, 0.932);
-  color: white;
+
   max-height: 6vw;
   font-size: 2vw;
   position: absolute;
   width: 100%;
 }
 
+.buttons {
+  background-color: rgba(23, 154, 23, 0.816);
+  border-radius: .3em;
+  max-height: 1em;
+  min-width: 8em;
+}
 
 
 h3 {
   padding-left: 1vw;
   padding-bottom: 1em;
-  width: 75%
+  width: 75%;
+  color: white;
 }
 
 .middle {
@@ -88,6 +107,13 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+}
+
+.flex-bottom {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -115,4 +141,14 @@ h3 {
     padding-bottom: .2em;
   }
 
+  .buttons {
+    font-size: 10px;
+    background-color: rgba(23, 154, 23, 0.816);
+    border-radius: .3em;
+  }
+
+}
+
+.hide {
+  display: none;
 }

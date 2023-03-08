@@ -2,22 +2,20 @@ import './Location.css';
 import { useState } from "react";
 import axios from 'axios';
 import PropTypes from 'prop-types';
-// import { BroswerROuter as Router, Route, Switch } from 'react-router-dom';
-// import Home from './SearchForm';
-// import ForecastList from './ForecastList';
-// import ForeCastDetails from './ForecastDetails';
+// import { useNavigate } from 'react-router-dom';
 
-export default function LocationPlace() {
+export function LocationPlace() {
+  // const navigate = useNavigate();
   const [city, setCity] = useState('');
   const [forecast, setForecast] = useState([]);
   const [selectDay, setSelectedDay] = useState(null);
   const API_KEY = '79e038ee9c973e14fcc461e602fd877d';
   // this will retrieve the forecast for the city input.
   const handleSearch = async () => {
+    // navigate('Fiveday');
     const response = await axios.get(
 
       `https://api.openweathermap.org/data/2.5/forecast?q=${city}&type=accurate&APPID=${API_KEY}&n=5`
-      // `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric&cnt=5`
 
     );
     //group by day
@@ -26,33 +24,11 @@ export default function LocationPlace() {
     setForecast(forecastData);
     console.log(response.data)
 
-
-
-    // const data = response.data.list.reduce((acc, item) => {
-    //   const date = new Date(item.dt * 1000).toDateString();
-    // const maxtemp = [];
-    // const maxTemp = maxtemp.push(Math.max(Date.main.temp_max));
-    // const mintemp = Math.min(item.main.temp_min);
-
-    // console.log(mintemp);
-    // console.log(maxtemp);
-    // console.log(maxTemp);
-    //   if (!acc[date]) {
-    //     acc[date] = item;
-    //   }
-    //   return acc;
-    // }, { });
-    // const ForecastData = Object.values(data);
-    // setForecast(ForecastData.slice(0, 5));
-    // const forecastData = Object.values(data);
-    // setForecast(forecastData.slice(0, 5));
-    // setForecast(response.data.list);
   };
   const handleCardClick = (day) => {
     setSelectedDay(day);
   };
   const WeatherCard = ({ day }) => {
-    // const Maxmin = arrayforcast.filter(day.dt == selectDay);
 
     const customDate = {
       weekday: 'long',
@@ -63,9 +39,11 @@ export default function LocationPlace() {
     const iconUrl = `http://openweathermap.org/img/w/${day.weather[0].icon}.png`;
 
     return (
-      <div className="weather-card" onClick={() => handleCardClick(day)}>
-        <img src={iconUrl} alt={day.weather[0].description} />
-        <p>{truedate}</p>
+      <div className="flexcards">
+        <div className="weather-card paddingcards" onClick={() => handleCardClick(day)}>
+          <img src={iconUrl} alt={day.weather[0].description} />
+          <p>{truedate}</p>
+        </div>
       </div>
     );
   };
@@ -78,9 +56,7 @@ export default function LocationPlace() {
       return null;
     }
 
-    // const date = new Date(selectDay.dt * 1000);
-    // const formatDate = date.toLocaleDateString();
-    // const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'long' });
+
     const iconUrl = `http://openweathermap.org/img/w/${selectDay.weather[0].icon}.png`;
 
     const customDate = {
@@ -96,14 +72,7 @@ export default function LocationPlace() {
       )
 
     }
-    // function Max_min(array) {
-    //   array = response.data
-    //   array.filter(day.dt == selectDay)
 
-    // }
-
-    // }
-    // console.log(MaxMinTemp)
 
     return (
       <div className="details-card">
@@ -117,21 +86,37 @@ export default function LocationPlace() {
     );
   };
   return (
-    <div className='location flexcontainer'>
-      <div className="flex-top">
-        <label htmlFor='location-input'> Enter a City and State </label>
-      </div>
+    <>
 
-      <div className="flex-bottom">
-        <input value={city} onChange={(e) => setCity(e.target.value)} id='location-input' className='larger' placeholder='Ithaca, NY' />
-        <button value="Get Weather" type="submit" id="requet-submit" onClick={handleSearch} className='button'> <a href="/src/Fiveday.js" /> Get Weather</button>
+      <header className="App-head flexdiv" >
+        <h3>
+          My Weather App
+        </h3>
+        <div className="headerbut align-right">
+          <label htmlFor='location-input'> </label>
+          <input value={city} onChange={(e) => setCity(e.target.value)} id='location-input' className='larger' placeholder='Ithaca, NY' />
+          <button value="Get Weather" type="submit" id="requet-submit" onClick={() => { handleSearch() }} className='button'> <a href="/src/Fiveday.js" /> Get Weather</button>
+        </div>
+      </header>
+      <div className='location flexcontainer middle background'>
+        <div className="flex-top">
+          <label htmlFor='location-input'> Enter a City and State </label>
+        </div>
+
+        <div className="flex-bottom">
+          <input value={city} onChange={(e) => setCity(e.target.value)} id='location-input' className='larger' placeholder='Ithaca, NY' />
+          <button value="Get Weather" type="submit" id="requet-submit" onClick={() => { handleSearch() }} className='button'> <a href="/src/Fiveday.js" /> Get Weather</button>
+        </div>
+        <div className="weather-cards flexcards">
+          {forecast.map((day) => (
+            <WeatherCard key={day.dt} day={day} />
+          ))}
+        </div>
+        <DetailsCard />
       </div>
-      <div className="weather-cards">
-        {forecast.map((day) => (
-          <WeatherCard key={day.dt} day={day} />
-        ))}
-      </div>
-      <DetailsCard />
-    </div>
+    </>
+
   )
 }
+
+export default LocationPlace;
