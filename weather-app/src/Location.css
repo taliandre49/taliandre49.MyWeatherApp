@@ -144,3 +144,17 @@ h1 {
   background-color: blue;
   ;
 }
+
+.largerimg {
+  width: 80%;
+  height: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.imgfive {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: 0 auto;
+}
