@@ -57,7 +57,7 @@ export function LocationPlace() {
     console.log(card)
     return (
       <div>
-        <div className={!card ? "hide" : " "} id="cardsdis">
+        <div className={!card ? " " : " "} id="cardsdis">
           <div className="weather-card paddingcards" onClick={() => { handleCardClick(day); setCard(!card) }}>
             <img src={iconUrl} alt={day.weather[0].description} />
             <p>{truedate}</p>
@@ -108,8 +108,8 @@ export function LocationPlace() {
     return (
       target.charAt(0).toUpperCase() + target.slice(1)
     )
-
   }
+
   return (
     <>
       <header className="App-head flexdiv" >
@@ -118,23 +118,23 @@ export function LocationPlace() {
         </h3>
         <div className="headerbut align-right">
           <label htmlFor='location-input'> </label>
-          <input value={city} onChange={(e) => setCity(e.target.value)} id='location-input' className='larger' placeholder='Ithaca, NY' />
+          <input value={city} onChange={(e) => setCity(e.target.value)} id='location-input' className='larger' placeholder='Ithaca' />
           <button value="Get Weather" type="submit" id="requet-submit" onClick={() => { handleSearch(); setClose(!close) }} className='button'> Get Weather</button>
         </div>
       </header>
       <div className='location flexcontainer middle background'>
         <div className={((!open || !close) && setCity !== " ") ? "hide" : " "}>
           <div className="flex-top">
-            <label htmlFor='location-input'> Enter a City and State </label>
+            <label htmlFor='location-input'> Enter a City </label>
           </div>
           <div className="flex-bottom">
-            <input value={city} onChange={(e) => setCity(e.target.value)} id='location-input' className='largermain' placeholder='Ithaca, NY' />
+            <input value={city} onChange={(e) => setCity(e.target.value)} id='location-input' className='largermain' placeholder='Ithaca' />
             <button value="Get Weather" type="submit" id="requet-submit" onClick={() => { handleSearch(); setOpen(!open) }} className='button'> Get Weather</button>
           </div>
         </div>
         <p></p>
-        <h1 className={((!open || !close) && setCity !== " ") ? " " : "hide "}> {Uppercasefirstletter(city)}</h1>
-        <div id="weathercards">
+        <h1 className={((!open || !close) && setCity !== " ") ? " " : "hide"}> {Uppercasefirstletter(city)}</h1>
+        <div className={!card ? "gone" : " "} id="weathercards">
           {forecast.map((day) => (
             <WeatherCard key={day.dt} day={day} />
           ))}
