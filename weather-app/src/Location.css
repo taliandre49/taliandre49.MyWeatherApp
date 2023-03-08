@@ -111,3 +111,9 @@ header {
 .hide {
   display: none;
 }
+
+#weathercards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

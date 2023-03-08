@@ -11,6 +11,8 @@ import React from 'react';
 export function LocationPlace() {
 
   const [open, setOpen] = React.useState(true);
+  const [dis, setDis] = React.useState(true);
+  const [close, setClose] = React.useState(true);
 
 
 
@@ -53,7 +55,7 @@ export function LocationPlace() {
 
     return (
       <div className="flexcards">
-        <div className="weather-card paddingcards" onClick={() => handleCardClick(day)}>
+        <div className="weather-card paddingcards" onClick={() => { handleCardClick(day); setDis(!dis) }}>
           <img src={iconUrl} alt={day.weather[0].description} />
           <p>{truedate}</p>
         </div>
@@ -107,11 +109,11 @@ export function LocationPlace() {
         <div className="headerbut align-right">
           <label htmlFor='location-input'> </label>
           <input value={city} onChange={(e) => setCity(e.target.value)} id='location-input' className='larger' placeholder='Ithaca, NY' />
-          <button value="Get Weather" type="submit" id="requet-submit" onClick={() => { handleSearch() }} className='button'> Get Weather</button>
+          <button value="Get Weather" type="submit" id="requet-submit" onClick={() => { handleSearch(); setClose(!close) }} className='button'> Get Weather</button>
         </div>
       </header>
       <div className='location flexcontainer middle background'>
-        <div className={open ? "open" : "hide"}>
+        <div className={(!open || !close) ? "hide" : " "}>
           <div className="flex-top">
             <label htmlFor='location-input'> Enter a City and State </label>
           </div>
@@ -120,7 +122,7 @@ export function LocationPlace() {
             <button value="Get Weather" type="submit" id="requet-submit" onClick={() => { handleSearch(); setOpen(!open) }} className='button'> Get Weather</button>
           </div>
         </div>
-        <div className="weather-cards flexcards">
+        <div className={dis ? "dis" : "hide"} id="weathercards">
           {forecast.map((day) => (
             <WeatherCard key={day.dt} day={day} />
           ))}
