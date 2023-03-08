@@ -13,6 +13,7 @@ export function LocationPlace() {
   const [open, setOpen] = React.useState(true);
   const [card, setCard] = React.useState(true);
   const [close, setClose] = React.useState(true);
+
   // const emptycit = " ";
 
 
@@ -55,10 +56,12 @@ export function LocationPlace() {
     const iconUrl = `http://openweathermap.org/img/w/${day.weather[0].icon}.png`;
     console.log(card)
     return (
-      <div className={!card ? "hide" : " "} id="cardsdis">
-        <div className="weather-card paddingcards" onClick={() => { handleCardClick(day); setCard(!card) }}>
-          <img src={iconUrl} alt={day.weather[0].description} />
-          <p>{truedate}</p>
+      <div>
+        <div className={!card ? "hide" : " "} id="cardsdis">
+          <div className="weather-card paddingcards" onClick={() => { handleCardClick(day); setCard(!card) }}>
+            <img src={iconUrl} alt={day.weather[0].description} />
+            <p>{truedate}</p>
+          </div>
         </div>
       </div>
     );
@@ -101,6 +104,12 @@ export function LocationPlace() {
     );
 
   };
+  function Uppercasefirstletter(target) {
+    return (
+      target.charAt(0).toUpperCase() + target.slice(1)
+    )
+
+  }
   return (
     <>
       <header className="App-head flexdiv" >
@@ -123,7 +132,8 @@ export function LocationPlace() {
             <button value="Get Weather" type="submit" id="requet-submit" onClick={() => { handleSearch(); setOpen(!open) }} className='button'> Get Weather</button>
           </div>
         </div>
-        <div className={card ? " " : "hide"} id="weathercards">
+        <h1 className={((!open || !close) && setCity !== " ") ? " " : "hide "}> {Uppercasefirstletter(city)}</h1>
+        <div id="weathercards">
           {forecast.map((day) => (
             <WeatherCard key={day.dt} day={day} />
           ))}
