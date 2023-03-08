@@ -119,7 +119,7 @@ export function LocationPlace() {
     }
     function KeltoFar(target) {
       return (
-        Math.round(1.8 * Math.abs(target - 273) + 32)
+        Math.round(1.8 * (target - 273) + 32)
       )
     }
 
