@@ -13,6 +13,8 @@ export function LocationPlace() {
   const [open, setOpen] = React.useState(true);
   const [card, setCard] = React.useState(true);
   const [close, setClose] = React.useState(true);
+  const [max, setMax] = useState('');
+  const [min, setMin] = useState('');
 
   // const emptycit = " ";
 
@@ -38,9 +40,31 @@ export function LocationPlace() {
     const forecastData = arrayforcast.filter((item, index) => index % 8 === 0);
     setForecast(forecastData);
     console.log(response.data)
+    console.log(min, max)
 
 
+    let minTemp = Infinity;
+    let maxTemp = -Infinity;
+
+    forecastData.forEach((day) => {
+      const tempMin = day.main.temp_min;
+      const tempMax = day.main.temp_max;
+      if (tempMin < minTemp) {
+        minTemp = tempMin;
+      }
+      if (tempMax > maxTemp) {
+        maxTemp = tempMax;
+      }
+      setMax(tempMax);
+      setMin(minTemp);
+    });
+
+
+
+    console.log("Min Temp:", setMax, "Max Temp:", setMin);
   };
+
+
 
   const handleCardClick = (day) => {
     setSelectedDay(day);
@@ -77,6 +101,7 @@ export function LocationPlace() {
     }
 
 
+
     const iconUrl = `http://openweathermap.org/img/w/${selectDay.weather[0].icon}.png`;
 
     const customDate = {
@@ -92,14 +117,22 @@ export function LocationPlace() {
       )
 
     }
+    function KeltoFar(target) {
+      return (
+        Math.round(1.8 * Math.abs(target - 273) + 32)
+      )
+    }
+
     return (
       <div className="details-card">
         <img src={iconUrl} alt={selectDay.weather[0].description} className="largerimg" />
         <h4>{date}</h4>
         {/* <p>{Uppercasefirstletter(city)}</p> */}
         <p>{Uppercasefirstletter(selectDay.weather[0].description)}</p>
-        <p> Min Temp: {Math.round(1.8 * Math.abs(selectDay.main.temp_min - 273) + 32)}°F</p>
-        <p> Max Temp: {Math.round(1.8 * Math.abs(selectDay.main.temp_max - 273) + 32)}°F</p>
+        <p> Min Temp: {KeltoFar(min)} °F </p>
+        <p> Max Temp: {KeltoFar(max)}°F</p>
+        {/* <p> Min Temp: {Math.round(1.8 * Math.abs(selectDay.main.temp_min - 273) + 32)}°F </p>
+        <p> Max Temp: {Math.round(1.8 * Math.abs(selectDay.main.temp_max - 273) + 32)}°F</p> */}
         <p> Humidity: {selectDay.main.humidity}</p>
       </div>
     );
