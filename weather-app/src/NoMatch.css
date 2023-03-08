@@ -1,0 +1,32 @@
+.background {
+  background-image: url('/images/pattern.svg');
+
+}
+
+#fourimg {
+  display: block;
+  margin: 0 auto;
+}
+
+.spacetop {
+  margin-top: 5em;
+}
+
+.cite {
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+}
+
+.four {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.error-code {
+  margin-left: 1em;
+}

@@ -68,7 +68,9 @@
 }
 
 .background {
-  background-image: url('/images/pattern.svg');
+  /* background-image: url('/images/pattern.svg'); */
+  background-size: cover !important;
+  background-size: 100%;
 }
 
 header {
