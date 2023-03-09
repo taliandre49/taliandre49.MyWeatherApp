@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import four from './404imgp1.jpeg';
-import './NoMatch.css';
+import four from '../images/404imgp1.jpeg';
+import '../styles/NoMatch.css';
 
 
 const NoMatch = () => {
