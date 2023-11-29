@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/%7Btaliandre49.MyWeatherApp%7D/static/css/main.073c9b0a.css",
-    "main.js": "/%7Btaliandre49.MyWeatherApp%7D/static/js/main.b4e6d611.js",
-    "static/js/787.d9312eb8.chunk.js": "/%7Btaliandre49.MyWeatherApp%7D/static/js/787.d9312eb8.chunk.js",
-    "static/media/logo.svg": "/%7Btaliandre49.MyWeatherApp%7D/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/%7Btaliandre49.MyWeatherApp%7D/static/css/main.04639380.css",
+    "main.js": "/%7Btaliandre49.MyWeatherApp%7D/static/js/main.31d39e16.js",
+    "static/js/787.42650831.chunk.js": "/%7Btaliandre49.MyWeatherApp%7D/static/js/787.42650831.chunk.js",
+    "static/media/pattern.svg": "/%7Btaliandre49.MyWeatherApp%7D/static/media/pattern.b218f269454ec3323735.svg",
+    "static/media/404imgp1.jpeg": "/%7Btaliandre49.MyWeatherApp%7D/static/media/404imgp1.7569231213bac2f65947.jpeg",
     "index.html": "/%7Btaliandre49.MyWeatherApp%7D/index.html",
-    "main.073c9b0a.css.map": "/%7Btaliandre49.MyWeatherApp%7D/static/css/main.073c9b0a.css.map",
-    "main.b4e6d611.js.map": "/%7Btaliandre49.MyWeatherApp%7D/static/js/main.b4e6d611.js.map",
-    "787.d9312eb8.chunk.js.map": "/%7Btaliandre49.MyWeatherApp%7D/static/js/787.d9312eb8.chunk.js.map"
+    "main.04639380.css.map": "/%7Btaliandre49.MyWeatherApp%7D/static/css/main.04639380.css.map",
+    "main.31d39e16.js.map": "/%7Btaliandre49.MyWeatherApp%7D/static/js/main.31d39e16.js.map",
+    "787.42650831.chunk.js.map": "/%7Btaliandre49.MyWeatherApp%7D/static/js/787.42650831.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.b4e6d611.js"
+    "static/css/main.04639380.css",
+    "static/js/main.31d39e16.js"
   ]
 }
